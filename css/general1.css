@@ -199,7 +199,7 @@ li:hover {
 }
 
 
-.menu_vertical:hover .menu_float {
+.menu_vertical li:hover .menu_float { 
 	display: block;
 }
 
