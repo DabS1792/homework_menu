@@ -47,11 +47,14 @@ table {
 
 /*menu*/
 
+
+
 .top_menu {
 	text-align: center;
 	font-size: 0;
 	position: relative;
 	z-index: 30;
+	border-radius: 10px;
 }
 
 .menu_gorizontal {
@@ -69,6 +72,8 @@ table {
 	border-right: 1px solid red;
 	text-transform: uppercase;
 	position: relative;
+	
+ 
 
 }
 
@@ -89,6 +94,7 @@ li:hover {
     position: relative;
     padding: 40px 88px 5px 82px;
 	text-decoration: none;
+
 }
 
 .menu_gorizontal li.before a:before {
@@ -149,9 +155,20 @@ li:hover {
 	position: absolute;
 	top: 100%;
 	left: 0;
-	display: none;
 	width: 100%;
+	height: 0px;
+    transition: all 0.2s linear;
+	opacity: 0;
+	margin-top:-1000px;
 }
+
+.menu_gorizontal li+li+li:hover .menu_vertical {
+	height: 310px;
+	opacity: 1;
+	margin-top: 0px;
+}
+
+
 
 .menu_vertical li {
 	position: relative;
@@ -177,8 +194,8 @@ li:hover {
 }
 
 
-.menu_vertical li:hover {
-	background:blue;
+.menu_vertical li:hover{
+	background: blue;
 }
 
 
@@ -191,7 +208,10 @@ li:hover {
 	position: absolute;
 	right:100%;
 	top: 0;
-	display: none;
+	width: 0px;
+	transition: all 0.2s ease-out;
+	opacity: 0;
+	
 }
 
 .menu_float li {
@@ -199,8 +219,10 @@ li:hover {
 }
 
 
-.menu_vertical li:hover .menu_float { 
-	display: block;
+.menu_vertical li:hover ul{ 
+	width: 350px;
+	opacity: 1;
+	transform: rotateY(360deg);
 }
 
 
@@ -301,6 +323,8 @@ html,body {
 	background: green;
 	color:white;
 }
+
+
 
 .dollar_img_moneyweb{
 	text-align: center;
