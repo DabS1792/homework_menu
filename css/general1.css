@@ -44,6 +44,12 @@ table {
 	border-spacing: 0;
 }
 
+/* body */
+
+body {background-color: green;}
+
+
+
 
 /*menu*/
 
@@ -225,8 +231,109 @@ li:hover {
 	transform: rotateY(360deg);
 }
 
+/* social__menu__right */
 
-/* social_menu */
+
+.social__menu__right {
+	position: fixed;
+	top:0;
+	right:0px;
+	transform: translate(835px,-17px) rotate(270deg);
+	color:blue;
+	font-size: 50px;
+	text-transform: uppercase;
+	border: 1px solid red;
+	transition: all 0.3s ease;
+	z-index: 20;
+	background: orange;
+	
+}
+
+.social__menu__right:hover {
+	transform: translate(0px,-17px) rotate(3.75turn) ;
+
+	
+}
+
+.social__menu__right p {
+	border-bottom: 1px solid red;
+	text-align: center;
+	padding: 10px 10px;
+}
+
+ul.ul__menu__right {
+	padding: 350px 189px 30px 6px;
+	height: 600px;
+}
+
+.social__menu__right ul li {
+	border: 1px solid red;
+	display: inline-block;
+	width: 130px;
+	height: 130px;
+}
+
+.social__menu__right ul li a {
+	display: block;
+	background:url(../gallery/img/css_sprites1.png);
+	width: 130px;
+	height: 130px;
+	
+}
+
+.social__menu__right ul li { 
+	transform: translateX(242px) rotate(43deg) translateY(9px);
+}
+
+
+.social__menu__right ul li+li { 
+	transform: translateX(289px) rotate(43deg) translateY(140px);
+}
+
+
+.social__menu__right ul li+li+li { 
+	transform: translateX(-46px) rotate(43deg) translateY(-133px);
+
+}
+
+.social__menu__right ul li:last-child {
+	transform: translateX(0px) rotate(43deg) translateY(0px);
+}
+
+
+.social__menu__right ul li a {
+	background:url(../gallery/img/css_sprites1.png);
+	background-position: -144px -4px;
+	transform: rotate(45deg);
+	transition: all 0.5s ease;
+}
+
+.social__menu__right ul li a:hover {
+	transform: rotate(4.13turn);
+}
+
+
+.social__menu__right ul li+li a {
+	background:url(../gallery/img/css_sprites1.png);
+	background-position: 275px 133px;
+}
+
+.social__menu__right ul li+li+li a {
+	background:url(../gallery/img/css_sprites1.png);
+	background-position: -5px -4px;
+}
+
+.social__menu__right ul li+li+li+li a {
+	background:url(../gallery/img/css_sprites1.png);
+	background-position: -146px -145px;
+}
+
+
+
+
+
+
+/* social_menu
 
 .social_menu {
 	font-size: 0px;
@@ -308,7 +415,7 @@ li:hover {
 .social_menu li+li+li+li+li+li+li:hover a {
 	background-position: -600px -98px;
 
-}
+} */
 
 /*moneyweb*/
 
@@ -762,13 +869,17 @@ h2,h3 {
 	display: inline-block;
 }
 
-.block1_img_gallery {position: relative;
+.block1_img_gallery {
+	position: relative;
 }
-.block2_img_gallery {position: relative;
+.block2_img_gallery {
+	position: relative;
 }
-.block3_img_gallery {position: relative;
+.block3_img_gallery {
+	position: relative;
 }
-.block4_img_gallery {position: relative;
+.block4_img_gallery {
+	position: relative;
 }
 
 .background_opacity	{
@@ -1038,3 +1149,5 @@ h2,h3 {
 }
 
 /*end*/
+
+
